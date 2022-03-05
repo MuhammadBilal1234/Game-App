@@ -21,3 +21,33 @@ a {
   margin: 0;
   padding: 0;
 }
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.menu-icon {
+  font-size: 17px;
+  padding: 3px;
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1px;
+}
+
+.closed-icons {
+  font-size: 30px;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.closed-icons:hover {
+  font-size: 32px;
+  padding: -1px;
+}
