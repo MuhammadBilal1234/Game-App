@@ -10,6 +10,8 @@ import {
   InputLeftElement,
 } from "@chakra-ui/react";
 import { FcMenu } from "react-icons/fc";
+import Image from "next/image";
+import MenuIcon from "../../../public/assets/menuIcon.png";
 
 const OpenSideBar: NextPage = ({ isOpen, setOpen }) => {
   return (
@@ -20,6 +22,7 @@ const OpenSideBar: NextPage = ({ isOpen, setOpen }) => {
       w={`${isOpen ? "260px" : "70px"}`}
       h="100vh"
       bg="#24262b"
+      zIndex="15"
       //   opacity={`${isOpen ? "1" : "0"}`}
       transition="width 300ms ease-in"
     >
@@ -34,7 +37,6 @@ const OpenSideBar: NextPage = ({ isOpen, setOpen }) => {
           className="menu-icon"
           color="white"
           onClick={() => setOpen(!isOpen)}
-          
         />
       </Box>
       {isOpen && (
@@ -73,47 +75,60 @@ const OpenSideBar: NextPage = ({ isOpen, setOpen }) => {
       )}
       {!isOpen && (
         <Box overflow="auto" h="99%" w="100%" pr="15px">
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
-          <FcMenu className="closed-icons" />
+          <Box w="1" h="10" ml="2" mt="2">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
+          <Box w="10" h="10" ml="2" mt="4">
+            <Image src={MenuIcon} layout="fixed" height={55} width={55} />
+          </Box>
         </Box>
       )}
     </Box>

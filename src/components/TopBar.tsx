@@ -19,7 +19,7 @@ const TopBar: NextPage = ({ isOpen }) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   return (
-    <Box position="fixed" top="0" left="0" right="0">
+    <Box position="fixed" top="0" left="0" right="0" zIndex="12">
       <Box
         bg="#31373d"
         w="100vw"
@@ -90,10 +90,12 @@ const TopBar: NextPage = ({ isOpen }) => {
               variant="outline"
               border="none"
               _focus={{}}
+              _active={{}}
             >
               Sign In
             </Button>
             <Button
+              _active={{}}
               _focus={{}}
               w="6.5rem"
               h="2.5rem"

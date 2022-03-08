@@ -1,37 +1,13 @@
 import { Box, Flex } from "@chakra-ui/react";
 import type { NextPage } from "next";
+import ImageCrousel from "../components/ImageCarousel";
 
 const IndexPage: NextPage = () => {
   return (
-    <Flex wrap="wrap">
-      <Box bg="red" h="300px" w="500px" m="1">
-        red
-      </Box>
-      <Box bg="red" h="300px" w="500px" m="1">
-        red
-      </Box>
-      <Box bg="red" h="300px" w="500px" m="1">
-        red
-      </Box>
-      <Box bg="red" h="300px" w="500px" m="1">
-        red
-      </Box>
-      <Box bg="red" h="300px" w="500px" m="1">
-        red
-      </Box>
-      <Box bg="red" h="300px" w="500px" m="1">
-        red
-      </Box>
-      <Box bg="red" h="300px" w="500px" m="1">
-        red
-      </Box>
-      <Box bg="red" h="300px" w="500px" m="1">
-        red
-      </Box>
-      <Box bg="red" h="300px" w="500px" m="1">
-        red
-      </Box>
-    </Flex>
+    <Box h="1000">
+      <ImageCrousel />
+      {/* <Box w="100" h="100vh" bg="red"></Box> */}
+    </Box>
   );
 };
 

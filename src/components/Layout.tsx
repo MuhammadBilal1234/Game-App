@@ -20,16 +20,11 @@ export default function Layout({ children }) {
       <Flex>
         <OpenSideBar isOpen={isOpen} setOpen={setOpen} />
         <Box
-          bg="green"
-          // position="fixed"
+          bg="#24262b"
           mt="75px"
           pl={`${isOpen ? "260px" : "70px"}`}
           transition="padding 300ms ease-in"
-          // position="relative"
-          // top="75px"
-          height="1200px"
           w="100%"
-          overflow="auto"
         >
           {children}
         </Box>
