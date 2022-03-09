@@ -11,6 +11,7 @@ const ImageCrousel: NextPage = () => {
       <Carousel
         responsive={responsive}
         infinite={true}
+        partialVisible={true}
         removeArrowOnDeviceType={["mobile"]}
         slidesToSlide={2}
         autoPlay
@@ -47,7 +48,8 @@ const responsive = {
     items: 2,
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 715, min: 0 },
     items: 1,
+    partialVisibilityGutter: 35,
   },
 };

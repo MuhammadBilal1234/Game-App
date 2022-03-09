@@ -39,15 +39,6 @@ a {
   z-index: 1px;
 }
 
-.closed-icons {
-  margin-top: 20px;
-  margin-left: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .closed-icons:hover {
   font-size: 32px;
   padding: -1px;
