@@ -15,7 +15,11 @@ import Image from "next/image";
 import Logo from "../../public/assets/logo.b7a2c469.png";
 import { isModifier } from "typescript";
 
-const TopBar: NextPage = ({ isOpen }) => {
+interface Props {
+  isOpen: Boolean;
+}
+
+const TopBar: NextPage<Props> = ({ isOpen }: Props) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   return (

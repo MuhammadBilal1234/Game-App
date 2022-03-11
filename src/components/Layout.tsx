@@ -10,19 +10,25 @@ import {
 import OpenSideBar from "./Sidebar/OpenSidebar";
 import TopBar from "./TopBar";
 import { FcMenu } from "react-icons/fc";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import useWindowSize from "./Hooks/useWindowSize";
 
 export default function Layout({ children }) {
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
+  const size = useWindowSize();
+
   return (
     <Box minH="100vh" bg="gray.100">
-      <TopBar isOpen={isOpen} />
+      <TopBar isOpen={isOpen && size.width > 1250 ? true : false} />
       <Flex>
-        <OpenSideBar isOpen={isOpen} setOpen={setOpen} />
+        <OpenSideBar
+          isOpen={isOpen && size.width > 1250 ? true : false}
+          setOpen={setOpen}
+        />
         <Box
           bg="#24262b"
           mt="75px"
-          pl={`${isOpen ? "260px" : "70px"}`}
+          pl={`${isOpen && size.width > 1250 ? "260px" : "70px"}`}
           transition="padding 300ms ease-in"
           w="100%"
         >

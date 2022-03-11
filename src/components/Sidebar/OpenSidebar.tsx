@@ -1,3 +1,4 @@
+import { Dispatch, SetStateAction } from "react";
 import type { NextPage } from "next";
 import {
   Box,
@@ -15,7 +16,12 @@ import Image from "next/image";
 import MenuIcon from "../../../public/assets/menuIcon.png";
 import ClosedSideBar from "./ClosedSidebar";
 
-const OpenSideBar: NextPage = ({ isOpen, setOpen }) => {
+interface Props {
+  isOpen: Boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+}
+
+const OpenSideBar: NextPage<Props> = ({ isOpen, setOpen }: Props) => {
   return (
     <Box
       position="fixed"

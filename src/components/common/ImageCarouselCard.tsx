@@ -7,7 +7,7 @@ import Image from "next/image";
 interface Props {
   height: number;
   width: number;
-  image: string;
+  image: StaticImageData;
 }
 
 const ImageCrouselCard: NextPage<Props> = ({

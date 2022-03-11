@@ -48,3 +48,7 @@ a {
   border-radius: 1.25rem;
   cursor: pointer;
 }
+
+.game-card > span {
+  border-radius: 7px;
+}
