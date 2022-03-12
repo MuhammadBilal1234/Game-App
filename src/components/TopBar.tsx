@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 import {
   Box,
   Button,
@@ -15,11 +16,15 @@ import Image from "next/image";
 import Logo from "../../public/assets/logo.b7a2c469.png";
 import { isModifier } from "typescript";
 
-const TopBar: NextPage = ({ isOpen }) => {
+interface Props {
+  isOpen: Boolean;
+}
+
+const TopBar: NextPage<Props> = ({ isOpen }: Props) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   return (
-    <Box position="fixed" top="0" left="0" right="0">
+    <Box position="fixed" top="0" left="0" right="0" zIndex="12">
       <Box
         bg="#31373d"
         w="100vw"
@@ -41,7 +46,13 @@ const TopBar: NextPage = ({ isOpen }) => {
             ml="130px"
             mt={3}
           >
-            <Image src={Logo} width="200" height="50%" layout="fixed" />
+            <Link href="https://game.babylonia.app" passHref={true}>
+              <a target="_blank" rel="noreferrer">
+                <Box h="190px" width="150px" ml="4">
+                  <Image src={Logo} />
+                </Box>
+              </a>
+            </Link>
           </Box>
           <InputGroup
             color="white"
@@ -90,10 +101,12 @@ const TopBar: NextPage = ({ isOpen }) => {
               variant="outline"
               border="none"
               _focus={{}}
+              _active={{}}
             >
               Sign In
             </Button>
             <Button
+              _active={{}}
               _focus={{}}
               w="6.5rem"
               h="2.5rem"

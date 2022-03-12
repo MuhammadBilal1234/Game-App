@@ -39,15 +39,16 @@ a {
   z-index: 1px;
 }
 
-.closed-icons {
-  font-size: 30px;
-  width: 100%;
-  margin-top: 20px;
-  margin-left: 5px;
-  cursor: pointer;
-}
-
 .closed-icons:hover {
   font-size: 32px;
   padding: -1px;
+}
+
+.imageCard {
+  border-radius: 1.25rem;
+  cursor: pointer;
+}
+
+.game-card > span {
+  border-radius: 7px;
 }
