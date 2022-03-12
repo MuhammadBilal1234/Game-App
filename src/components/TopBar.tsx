@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 import {
   Box,
   Button,
@@ -45,7 +46,13 @@ const TopBar: NextPage<Props> = ({ isOpen }: Props) => {
             ml="130px"
             mt={3}
           >
-            <Image src={Logo} width="200" height="50%" layout="fixed" />
+            <Link href="https://game.babylonia.app" passHref={true}>
+              <a target="_blank" rel="noreferrer">
+                <Box h="190px" width="150px" ml="4">
+                  <Image src={Logo} />
+                </Box>
+              </a>
+            </Link>
           </Box>
           <InputGroup
             color="white"

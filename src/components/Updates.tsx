@@ -33,7 +33,7 @@ export default IndexPage;
 
 const GameCard = () => {
   return (
-    <Box>
+    <Box mt="2.5" ml="2">
       <Flex>
         <Box w="42px" h="42px">
           <Image src={GameCardTag} alt="image" />
@@ -42,8 +42,8 @@ const GameCard = () => {
           <span style={{ color: "#e70b6c" }}>Much</span> Wow Win
         </Text>
       </Flex>
-      <Box ml="5" mt="3">
-        <Flex mb="3" p>
+      <Box ml="10" mt="3">
+        <Flex mb="3">
           <Box
             w="52px"
             h="52px"

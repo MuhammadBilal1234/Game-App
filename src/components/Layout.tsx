@@ -7,7 +7,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-import OpenSideBar from "./Sidebar/OpenSidebar";
+import SideBar from "./Sidebar";
 import TopBar from "./TopBar";
 import { FcMenu } from "react-icons/fc";
 import { useState, useEffect } from "react";
@@ -21,7 +21,7 @@ export default function Layout({ children }) {
     <Box minH="100vh" bg="gray.100">
       <TopBar isOpen={isOpen && size.width > 1250 ? true : false} />
       <Flex>
-        <OpenSideBar
+        <SideBar
           isOpen={isOpen && size.width > 1250 ? true : false}
           setOpen={setOpen}
         />
