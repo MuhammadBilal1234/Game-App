@@ -51,39 +51,6 @@ const ClosedSideBar: NextPage = () => {
       <Box w="10" h="10" ml="2" mt="4" cursor="pointer">
         <Image src={MenuIcon} layout="fixed" height={55} width={55} />
       </Box>
-      <Box w="10" h="10" ml="2" mt="4">
-        <Image src={MenuIcon} layout="fixed" height={55} width={55} />
-      </Box>
-      <Box w="10" h="10" ml="2" mt="4">
-        <Image src={MenuIcon} layout="fixed" height={55} width={55} />
-      </Box>
-      <Box w="10" h="10" ml="2" mt="4">
-        <Image src={MenuIcon} layout="fixed" height={55} width={55} />
-      </Box>
-      <Box w="10" h="10" ml="2" mt="4">
-        <Image src={MenuIcon} layout="fixed" height={55} width={55} />
-      </Box>
-      <Box w="10" h="10" ml="2" mt="4">
-        <Image src={MenuIcon} layout="fixed" height={55} width={55} />
-      </Box>
-      <Box w="10" h="10" ml="2" mt="4">
-        <Image src={MenuIcon} layout="fixed" height={55} width={55} />
-      </Box>
-      <Box w="10" h="10" ml="2" mt="4">
-        <Image src={MenuIcon} layout="fixed" height={55} width={55} />
-      </Box>
-      <Box w="10" h="10" ml="2" mt="4">
-        <Image src={MenuIcon} layout="fixed" height={55} width={55} />
-      </Box>
-      <Box w="10" h="10" ml="2" mt="4">
-        <Image src={MenuIcon} layout="fixed" height={55} width={55} />
-      </Box>
-      <Box w="10" h="10" ml="2" mt="4">
-        <Image src={MenuIcon} layout="fixed" height={55} width={55} />
-      </Box>
-      <Box w="10" h="10" ml="2" mt="4">
-        <Image src={MenuIcon} layout="fixed" height={55} width={55} />
-      </Box>
     </Box>
   );
 };
