@@ -93,7 +93,7 @@ const TopBar: NextPage<Props> = ({ isOpen }: Props) => {
               },
             }}
           />
-          <Box pt="4" w="350px" h="100%">
+          <Box pt="4" minW="350px" h="100%">
             <Button
               _hover={{}}
               mr={5}

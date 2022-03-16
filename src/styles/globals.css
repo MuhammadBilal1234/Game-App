@@ -52,3 +52,9 @@ a {
 .game-card > span {
   border-radius: 7px;
 }
+
+.gameCard > span {
+  width: 100%;
+  height: 100%;
+  padding: auto;
+}

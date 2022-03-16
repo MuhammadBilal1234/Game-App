@@ -6,7 +6,15 @@ import GameCardIcon from "../../public/assets/GameCardIcon.png";
 
 const IndexPage: NextPage = () => {
   return (
-    <Flex h="220" w="100%" borderRadius="1.5rem" p="2" bg="#383535">
+    <Flex
+      h="220"
+      w="96%"
+      minW="515"
+      m="auto"
+      borderRadius="1.5rem"
+      p="2"
+      bg="#383535"
+    >
       <Box w={{ base: "50%", sm: "50%", md: "33%", lg: "26%" }}>
         <GameCard />
       </Box>
