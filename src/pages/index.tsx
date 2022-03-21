@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import ImageCrousel from "../components/ImageCarousel";
 import Updates from "../components/Updates";
 import GameCard from "../components/GameCard";
+import Signin from "../components/Signin";
 
 const IndexPage: NextPage = () => {
   return (
