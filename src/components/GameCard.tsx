@@ -6,7 +6,11 @@ import GameCard from "./common/GameCard";
 import GameCardImageLarge from "../../public/assets/GameCardImageLarge.png";
 import GameCardImageSmall from "../../public/assets/GameCardImageSmall.png";
 
-const IndexPage: NextPage = () => {
+interface Props {
+  title: string;
+}
+
+const IndexPage: NextPage<Props> = ({ title }) => {
   return (
     <Box w="96%" m="auto" mt="10">
       <Box
@@ -21,7 +25,7 @@ const IndexPage: NextPage = () => {
         bgGradient="linear-gradient(to right,#1c1e22,#1c1e22)"
         fontWeight="bold"
       >
-        <span style={{ color: "#e70b6c" }}>IN-HOUSE</span> GAMES
+        <span style={{ color: "#e70b6c" }}>{title}</span> GAMES
       </Box>
       <Box position="relative" ml="130px" h="70px">
         <Image src={CardSlide} layout="fixed" height={70} />
@@ -38,11 +42,15 @@ const IndexPage: NextPage = () => {
             <GameCard image={GameCardImageSmall} width="200" height="200" />
             <GameCard image={GameCardImageSmall} width="200" height="200" />
             <GameCard image={GameCardImageSmall} width="200" height="200" />
+            <GameCard image={GameCardImageSmall} width="200" height="200" />
+            <GameCard image={GameCardImageSmall} width="200" height="200" />
             {/* <GameCard image={GameCardImageSmall} width="200" height="200" /> */}
           </Flex>
           <Flex ml="2" p="2" minW="100%" m="auto" wrap="wrap">
             <GameCard image={GameCardImageLarge} width="300" height="200" />
             {/* <GameCard image={GameCardImageSmall} width="200" height="200" /> */}
+            <GameCard image={GameCardImageSmall} width="200" height="200" />
+            <GameCard image={GameCardImageSmall} width="200" height="200" />
             <GameCard image={GameCardImageSmall} width="200" height="200" />
             <GameCard image={GameCardImageSmall} width="200" height="200" />
             <GameCard image={GameCardImageSmall} width="200" height="200" />
