@@ -21,6 +21,7 @@ const GameCard: NextPage<Props> = ({ width, height, image }) => {
       flexBasis={width}
       pl="2"
       position="relative"
+      pointerEvents="all"
     >
       <Image
         src={image}
@@ -30,6 +31,21 @@ const GameCard: NextPage<Props> = ({ width, height, image }) => {
         // height={height}
         // width={450}
       />
+      <Box
+        bg="black"
+        position="absolute"
+        top="0"
+        left="0"
+        width="100%"
+        borderRadius="1.25rem"
+        h="100%"
+        opacity="0"
+        // pointerEvents="none"
+        cursor="pointer"
+        _hover={{
+          opacity: "0.3",
+        }}
+      ></Box>
     </Box>
   );
 };

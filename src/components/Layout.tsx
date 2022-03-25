@@ -18,7 +18,7 @@ export default function Layout({ children }) {
   const size = useWindowSize();
 
   return (
-    <Box minH="100vh" bg="gray.100">
+    <Box h="100%" minH="100vh" bg="gray.100">
       <TopBar isOpen={isOpen && size.width > 1250 ? true : false} />
       <Flex>
         <SideBar
