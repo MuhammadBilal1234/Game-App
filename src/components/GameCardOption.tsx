@@ -2,10 +2,13 @@ import { Box, Flex, Button } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import ImageCrousel from "../components/ImageCarousel";
 import Updates from "../components/Updates";
-import GameCard from "../components/GameCard";
+import GameCard from "./GameCards/GameCard";
 import Signin from "../components/Signin";
 import { useState } from "react";
 import OptionIcon from "../../public/assets/OptionIcon.png";
+import CasinoIcon from "../../public/assets/CasinoIcon.png";
+import DiceIcon from "../../public/assets/DiceIcon.png";
+import SlotIcon from "../../public/assets/SlotIcon.png";
 import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
 
@@ -60,7 +63,7 @@ const IndexPage: NextPage<Props> = ({ setShowCard }) => {
           onClick={() => setShowCard(2)}
         >
           <Box h="30px" w="30px" mr=".25rem">
-            <Image src={OptionIcon} />
+            <Image src={DiceIcon} />
           </Box>
           <Box>Original</Box>
         </Box>
@@ -80,7 +83,7 @@ const IndexPage: NextPage<Props> = ({ setShowCard }) => {
           onClick={() => setShowCard(3)}
         >
           <Box h="30px" w="30px" mr=".25rem">
-            <Image src={OptionIcon} />
+            <Image src={SlotIcon} />
           </Box>
           <Box>Slots</Box>
         </Box>
@@ -98,9 +101,10 @@ const IndexPage: NextPage<Props> = ({ setShowCard }) => {
           _hover={{
             color: "grey",
           }}
+          onClick={() => setShowCard(4)}
         >
           <Box h="30px" w="30px" mr=".25rem">
-            <Image src={OptionIcon} />
+            <Image src={CasinoIcon} />
           </Box>
           <Box>Live Casino</Box>
         </Box>
